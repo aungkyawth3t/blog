@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Blog</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <article>
+        <h2> <a href="/blog/first-blog">First Blog</a></h2>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum, velit? Eum laudantium iste aliquam fuga facere quasi exercitationem at unde, vel ratione a dolores nihil voluptates repellendus saepe similique nulla deleniti non? Repellendus, minima omnis nostrum officiis laborum rerum eveniet iusto explicabo in alias temporibus sapiente quos? Provident voluptatibus officia voluptates minus porro qui suscipit labore natus aliquam enim quibusdam dolorum corrupti ut nisi optio dolore, repellat alias accusamus officiis, fuga libero quo. Totam quae illo, excepturi, aliquid incidunt explicabo praesentium consequatur alias repellendus nostrum mollitia nihil! Nesciunt vitae quia molestias aut laborum. Assumenda harum voluptatum id maiores neque ad, quibusdam ducimus quidem illo itaque alias deserunt error magni enim doloribus libero totam laboriosam quos veniam quasi, voluptates, modi obcaecati? Ullam eaque obcaecati iusto a repellendus neque velit, maiores perspiciatis adipisci non provident dicta exercitationem dolorum voluptates. Placeat, deleniti vitae sed itaque iste quisquam repudiandae ipsa, magni perspiciatis laborum nostrum.
+        </p>
+    </article>
+    <article>
+        <h2> <a href="/blog/second-blog">Second Blog</a></h2>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum, velit? Eum laudantium iste aliquam fuga facere quasi exercitationem at unde, vel ratione a dolores nihil voluptates repellendus saepe similique nulla deleniti non? Repellendus, minima omnis nostrum officiis laborum rerum eveniet iusto explicabo in alias temporibus sapiente quos? Provident voluptatibus officia voluptates minus porro qui suscipit labore natus aliquam enim quibusdam dolorum corrupti ut nisi optio dolore, repellat alias accusamus officiis, fuga libero quo. Totam quae illo, excepturi, aliquid incidunt explicabo praesentium consequatur alias repellendus nostrum mollitia nihil! Nesciunt vitae quia molestias aut laborum. Assumenda harum voluptatum id maiores neque ad, quibusdam ducimus quidem illo itaque alias deserunt error magni enim doloribus libero totam laboriosam quos veniam quasi, voluptates, modi obcaecati? Ullam eaque obcaecati iusto a repellendus neque velit, maiores perspiciatis adipisci non provident dicta exercitationem dolorum voluptates. Placeat, deleniti vitae sed itaque iste quisquam repudiandae ipsa, magni perspiciatis laborum nostrum.
+        </p>
+    </article>
+    <article>
+        <h2> <a href="/blog/third-blog">Third Blog</a></h2>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum, velit? Eum laudantium iste aliquam fuga facere quasi exercitationem at unde, vel ratione a dolores nihil voluptates repellendus saepe similique nulla deleniti non? Repellendus, minima omnis nostrum officiis laborum rerum eveniet iusto explicabo in alias temporibus sapiente quos? Provident voluptatibus officia voluptates minus porro qui suscipit labore natus aliquam enim quibusdam dolorum corrupti ut nisi optio dolore, repellat alias accusamus officiis, fuga libero quo. Totam quae illo, excepturi, aliquid incidunt explicabo praesentium consequatur alias repellendus nostrum mollitia nihil! Nesciunt vitae quia molestias aut laborum. Assumenda harum voluptatum id maiores neque ad, quibusdam ducimus quidem illo itaque alias deserunt error magni enim doloribus libero totam laboriosam quos veniam quasi, voluptates, modi obcaecati? Ullam eaque obcaecati iusto a repellendus neque velit, maiores perspiciatis adipisci non provident dicta exercitationem dolorum voluptates. Placeat, deleniti vitae sed itaque iste quisquam repudiandae ipsa, magni perspiciatis laborum nostrum.
+        </p>
+    </article>
+</body>
+</html>
