@@ -10,3 +10,8 @@ body {
   max-width: 600px;
   margin: auto;
 }
+
+h1,
+p {
+  margin-bottom: 10px;
+}
