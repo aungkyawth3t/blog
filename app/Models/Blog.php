@@ -2,52 +2,17 @@
 
 namespace App\Models;
 
-use Illuminate\Support\Facades\File;
-use Spatie\YamlFrontMatter\YamlFrontMatter;
-use Illuminate\Database\Eloquent\ModelNotFoundException;
+use App\Models\Category;
+use Illuminate\Database\Eloquent\Model;
 
-
-class Blog
+class Blog extends Model
 {
-    public $title, $slug, $intro, $body, $date;
+    protected $guarded = []; // no guard => all faillable
+    // protected $fillable = ['title', 'intro', 'body'];
 
-    public function __construct($title, $slug, $intro, $body, $date)
+    public function category()
     {
-        $this->title = $title;
-        $this->slug = $slug;
-        $this->intro = $intro;
-        $this->body = $body;
-        $this->date = $date;
-    }
-
-    public static function all()
-    {
-        $files = File::files(\resource_path("blogs"));
-        // collection 
-        return collect($files)->map(function ($file) {
-            $obj = YamlFrontMatter::parseFile($file);
-            return new Blog($obj->title, $obj->slug, $obj->intro, $obj->body(), $obj->date);
-        })
-        ->sortByDesc('date');
-        // return array_map( function ($file) {
-        //     $obj = YamlFrontMatter::parseFile($file);
-        //     return new Blog($obj->title, $obj->slug, $obj->intro, $obj->body());
-        // }, $files);
-    }
-    
-    public static function find($slug)
-    {
-        $blogs = static::all();
-        return $blogs->firstWhere('slug', $slug);
-    }
-
-    public static function findOrFail($slug)
-    {
-        $blog = static::find($slug);
-        if(!$blog) {
-            // abort(404);
-            throw new ModelNotFoundException();
-        }
-        return $blog;
+        // hasOne, hasMany, belongsTo belongsToMany
+        return $this->belongsTo(Category::class);
     }
 }
