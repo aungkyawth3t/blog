@@ -2,11 +2,13 @@
 
 use App\Models\Blog;
 use App\Models\Category;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('blogs', [
-        'blogs' => Blog::all()
+        'blogs' => Blog::with('category')->get() //eager load //lazy loading
     ]);
 });
 
