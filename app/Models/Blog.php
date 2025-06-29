@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Models\User;
 use App\Models\Category;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Notifications\Notifiable;
@@ -12,9 +13,15 @@ class Blog extends Model
     use HasFactory, Notifiable;
     
     protected $guarded = []; // no guard => all faillable
+
     public function category()
     {
         // hasOne, hasMany, belongsTo belongsToMany
         return $this->belongsTo(Category::class);
+    }
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
     }
 }

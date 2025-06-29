@@ -23,3 +23,9 @@ Route::get('categories/{category:slug}', function (Category $category) {
         'blogs' => $category->blogs
     ]);
 });
+
+Route::get('blogs/author/{id}', function (User $user) {
+    return view('user', [
+        'user' => $user->id
+    ]);
+});
