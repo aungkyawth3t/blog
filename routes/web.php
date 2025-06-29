@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('blogs', [
-        'blogs' => Blog::all() //eager load //lazy loading
+        'blogs' => Blog::latest()->get() //eager load //lazy loading
     ]);
 });
 
@@ -25,7 +25,7 @@ Route::get('categories/{category:slug}', function (Category $category) {
     ]);
 });
 
-Route::get('users/{user}', function (User $user) {
+Route::get('users/{user:username}', function (User $user) {
     return view('blogs' , [
         'blogs' => $user->blogs
     ]);
