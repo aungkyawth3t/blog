@@ -13,6 +13,7 @@ class Blog extends Model
     use HasFactory, Notifiable;
     
     protected $guarded = []; // no guard => all faillable
+    protected $with = ['category', 'author'];
 
     public function category()
     {
@@ -20,8 +21,8 @@ class Blog extends Model
         return $this->belongsTo(Category::class);
     }
 
-    public function user()
+    public function author()
     {
-        return $this->belongsTo(User::class);
+        return $this->belongsTo(User::class, 'user_id');
     }
 }
