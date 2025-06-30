@@ -2,41 +2,27 @@
 
 namespace App\Models;
 
-use Illuminate\Support\Facades\File;
-use Spatie\YamlFrontMatter\YamlFrontMatter;
+use App\Models\User;
+use App\Models\Category;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Notifications\Notifiable;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
-
-class Blog
+class Blog extends Model
 {
-    public $title, $slug, $intro, $body, $date;
-
-    public function __construct($title, $slug, $intro, $body, $date)
-    {
-        $this->title = $title;
-        $this->slug = $slug;
-        $this->intro = $intro;
-        $this->body = $body;
-        $this->date = $date;
-    }
-
-    public static function all()
-    {
-        $files = File::files(\resource_path("blogs"));
-        // collection 
-        return collect($files)->map(function ($file) {
-            $obj = YamlFrontMatter::parseFile($file);
-            return new Blog($obj->title, $obj->slug, $obj->intro, $obj->body(), $obj->date);
-        })
-        ->sortByDesc('date');
-        // return array_map( function ($file) {
-        //     $obj = YamlFrontMatter::parseFile($file);
-        //     return new Blog($obj->title, $obj->slug, $obj->intro, $obj->body());
-        // }, $files);
-    }
+    use HasFactory, Notifiable;
     
-    public static function find($slug)
+    protected $guarded = []; // no guard => all faillable
+    protected $with = ['category', 'author'];
+
+    public function category()
     {
-        $blogs = static::all();
-        return $blogs->firstWhere('slug', $slug);
+        // hasOne, hasMany, belongsTo belongsToMany
+        return $this->belongsTo(Category::class);
+    }
+
+    public function author()
+    {
+        return $this->belongsTo(User::class, 'user_id');
     }
 }
