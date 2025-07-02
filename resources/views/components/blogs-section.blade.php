@@ -38,10 +38,11 @@
     </div>
   </form>
   <div class="row">
-    @foreach ($blogs as $blog)
-      <div class="col-md-4 mb-4">
-        <x-card :blog="$blog"/>
-      </div>
-    @endforeach
-  </div>
+      @forelse ($blogs as $blog)
+        <div class="col-md-4 mb-4">
+          <x-card :blog="$blog"/>
+        </div>
+      @empty
+        <p class="text-center text-muted">No Blogs found.</p>
+      @endforelse
 </section>
