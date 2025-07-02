@@ -3,13 +3,13 @@
 use App\Models\Blog;
 use App\Models\User;
 use App\Models\Category;
-use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('blogs', [
-        'blogs' => Blog::latest()->get() //eager load //lazy loading
+        'blogs' => Blog::latest()->get(),
+        'categories' => Category::all()
     ]);
 });
 
@@ -22,7 +22,9 @@ Route::get('/blogs/{blog:slug}', function (Blog $blog) { //Blog::findOrFail($id)
 
 Route::get('categories/{category:slug}', function (Category $category) {
     return view('blogs', [
-        'blogs' => $category->blogs
+        'blogs' => $category->blogs,
+        'categories' => Category::all(),
+        'currentCategory' => $category
     ]);
 });
 

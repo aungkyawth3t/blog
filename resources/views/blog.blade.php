@@ -9,7 +9,7 @@
             alt="..."
           />
           <h3 class="my-3"> {{ $blog->title }} </h3>
-          <div class="badge bg-primary ms-auto"> {{ $blog->category->name }} </div>
+          <div><a href="categories/{{ $blog->category->slug }}"> <span class="badge bg-primary ms-auto"> {{ $blog->category->name }} </span> </a></div>
           <div class="d-flex align-items-center justify-content-between">
             <div>Author - <a href="/users/{{ $blog->author->username }}">{{ $blog->author->name }}</a> </div>
             <div class="text-secondary">{{ $blog->created_at->diffForHumans() }} </div>
