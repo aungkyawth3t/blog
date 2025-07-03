@@ -392,3 +392,11 @@
 1751542831-5519-2116066257,1751542831.3235,GET,/?search=reprehenderit.,App\Http\Controllers\BlogController@index,200,477.15711593628,request
 1751542846-7063-365601372,1751542846.5053,GET,/?search=reprehenderit.,App\Http\Controllers\BlogController@index,200,362.32280731201,request
 1751542850-8771-1388800033,1751542850.6524,GET,/?search=,App\Http\Controllers\BlogController@index,200,458.59599113464,request
+1751547387-3556-1718033936,1751547387.2556,GET,/,App\Http\Controllers\BlogController@index,200,223.49810600281,request
+1751547463-4070-1727785816,1751547463.1727,GET,/,App\Http\Controllers\BlogController@index,200,632.94005393982,request
+1751548018-7546-1185423205,1751548018.1922,GET,/,App\Http\Controllers\BlogController@index,200,1093.4069156647,request
+1751552178-3097-516603348,1751552177.2985,GET,/,App\Http\Controllers\BlogController@index,200,2024.9140262604,request
+1751552213-5068-1426376134,1751552213.2042,GET,/,App\Http\Controllers\BlogController@index,200,537.77885437012,request
+1751552398-5863-69784766,1751552397.9377,GET,/,App\Http\Controllers\BlogController@index,200,1403.6920070648,request
+1751552405-2061-1090503243,1751552404.7348,GET,/?search=suscipit,App\Http\Controllers\BlogController@index,200,900.18510818481,request
+1751552409-6880-2041283047,1751552409.2371,GET,/?search=,App\Http\Controllers\BlogController@index,200,924.13115501404,request

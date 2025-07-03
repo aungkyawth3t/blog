@@ -15,9 +15,12 @@ class Blog extends Model
     protected $guarded = []; // no guard => all faillable
     protected $with = ['category', 'author'];
 
-    public function scopeFilter($query) //Blog::latest()->filter();
-    {
-
+    public function scopeFilter($query, $filter) //Blog::latest()->filter();
+    {;
+        $query->when($filter['search'], function ($query, $search){
+            $query->where('title', 'LIKE', '%'.$search.'%')
+                  ->orWhere('body', 'LIKE', '%'.$search.'%');
+        });
     }
 
     public function category()
