@@ -20,11 +20,12 @@ class BlogController extends Controller
 
     protected function getBlogs()
     {
-        $blogs = Blog::latest();
-        if(request('search')){
-            $blogs = $blogs->where('title', 'LIKE', '%'.request('search').'%')
-                            ->orWhere('body', 'LIKE', '%'.request('search').'%');
-        }
-        return $blogs->get();
+        return Blog::latest()->filter()->get();
+        // $query = Blog::latest();
+        // $query->when(request('search'), function ($query, $search){
+        //     $query->where('title', 'LIKE', '%'.$search.'%')
+        //           ->orWhere('body', 'LIKE', '%'.$search.'%');
+        // });
+        // return $query->get();
     }
 }

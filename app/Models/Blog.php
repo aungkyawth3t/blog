@@ -15,6 +15,11 @@ class Blog extends Model
     protected $guarded = []; // no guard => all faillable
     protected $with = ['category', 'author'];
 
+    public function scopeFilter($query) //Blog::latest()->filter();
+    {
+
+    }
+
     public function category()
     {
         // hasOne, hasMany, belongsTo belongsToMany
