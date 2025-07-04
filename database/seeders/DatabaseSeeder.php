@@ -19,9 +19,11 @@ class DatabaseSeeder extends Seeder
         Blog::truncate();
         Category::truncate();
 
-        $frontend = Category::factory()->create(['name' => 'frontend']);
-        $backend = Category::factory()->create(['name' => 'backend']);
-        Blog::factory(2)->create(['category_id' => $frontend->id]);
-        Blog::factory(2)->create(['category_id' => $backend->id]);
+        $mgmg = User::factory()->create(['name' => 'mgmg', 'username' => 'mgmg']);
+        $kyawkyaw = User::factory()->create(['name' => 'kyawkyaw', 'username' => 'kyawkyaw']);
+        $frontend = Category::factory()->create(['name' => 'frontend', 'slug' => 'frontend']);
+        $backend = Category::factory()->create(['name' => 'backend', 'slug' => 'backend']);  
+        Blog::factory(2)->create(['category_id' => $frontend->id, 'user_id' => $mgmg->id]);
+        Blog::factory(2)->create(['category_id' => $backend->id, 'user_id' => $kyawkyaw->id]);
     }
 }

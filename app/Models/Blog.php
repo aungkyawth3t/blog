@@ -16,10 +16,15 @@ class Blog extends Model
     protected $with = ['category', 'author'];
 
     public function scopeFilter($query, $filter) //Blog::latest()->filter();
-    {;
+    {
         $query->when($filter['search']??false, function ($query, $search){
             $query->where('title', 'LIKE', '%'.$search.'%')
                   ->orWhere('body', 'LIKE', '%'.$search.'%');
+        });
+         $query->when($filter['category']??false, function ($query, $slug){
+            $query->whereHas('category', function ($query) {
+                $query->where('slug', $slug);
+            });
         });
     }
 

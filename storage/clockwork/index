@@ -424,3 +424,10 @@
 1751555383-1399-1065622212,1751555382.9984,GET,/.well-known/appspecific/com.chrome.devtools.json,,404,247.14303016663,request
 1751555386-4208-545542894,1751555386.3192,GET,/?search=non+,App\Http\Controllers\BlogController@index,200,185.5161190033,request
 1751555389-1171-1019033496,1751555388.9491,GET,/.well-known/appspecific/com.chrome.devtools.json,,404,306.27012252808,request
+1751555849-8437-927739905,1751555849.2107,GET,/,App\Http\Controllers\BlogController@index,200,1051.9948005676,request
+1751555853-4793-217893417,1751555853.3482,GET,/,App\Http\Controllers\BlogController@index,200,244.65799331665,request
+1751555855-8569-920286956,1751555855.7317,GET,/,App\Http\Controllers\BlogController@index,200,240.54884910583,request
+1751555856-8986-1385819445,1751555856.7842,GET,/,App\Http\Controllers\BlogController@index,200,221.2860584259,request
+1751555870-1698-122114258,1751555870.0469,GET,/,App\Http\Controllers\BlogController@index,200,222.43404388428,request
+1751555923-2844-1158987487,1751555923.1381,GET,/,App\Http\Controllers\BlogController@index,200,292.44780540466,request
+1751556012-2392-1813194831,1751556012.0753,GET,/?category=frontend,App\Http\Controllers\BlogController@index,200,309.15307998657,request
