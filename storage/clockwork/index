@@ -447,3 +447,17 @@
 1751642150-7493-1023719298,1751642150.3878,GET,/?category=backend,App\Http\Controllers\BlogController@index,200,783.34617614746,request
 1751642154-9789-1434372458,1751642154.8238,GET,/,App\Http\Controllers\BlogController@index,200,304.08811569214,request
 1751642158-6582-2090255072,1751642158.5008,GET,/?category=frontend,App\Http\Controllers\BlogController@index,200,301.7270565033,request
+1751642436-3840-647783028,1751642436.2093,GET,/?category=frontend,App\Http\Controllers\BlogController@index,200,374.37105178833,request
+1751642754-0359-2118593188,1751642753.8058,GET,/?category=frontend,App\Http\Controllers\BlogController@index,200,606.92501068115,request
+1751642756-6159-1954024109,1751642756.4527,GET,/,App\Http\Controllers\BlogController@index,200,327.47316360474,request
+1751642761-4197-1713673556,1751642761.2371,GET,/?auther=mgmg,App\Http\Controllers\BlogController@index,200,346.19498252869,request
+1751642829-3391-1000357477,1751642829.1611,GET,/?auther=mgmg,App\Http\Controllers\BlogController@index,200,344.12908554077,request
+1751724696-4900-1365269047,1751724695.7128,GET,/,App\Http\Controllers\BlogController@index,500,27933.860063553,request
+1751725407-4762-182578762,1751725405.9457,GET,/,App\Http\Controllers\BlogController@index,200,5173.150062561,request
+1751725465-0966-180676035,1751725464.4136,GET,/,App\Http\Controllers\BlogController@index,200,1602.4339199066,request
+1751726673-2620-1342532470,1751726671.8008,GET,/,App\Http\Controllers\BlogController@index,500,14418.188810349,request
+1751729578-6787-138356904,1751729577.927,GET,/,App\Http\Controllers\BlogController@index,500,6683.5000514984,request
+1751729873-6279-1587969956,1751729873.4198,GET,/,App\Http\Controllers\BlogController@index,500,15764.221906662,request
+1751730101-4494-51550970,1751730101.1434,GET,/,App\Http\Controllers\BlogController@index,500,10075.437068939,request
+1751730156-6548-1678600226,1751730156.5024,GET,/,App\Http\Controllers\BlogController@index,500,3308.984041214,request
+1751730170-2871-2091594602,1751730170.0975,GET,/,App\Http\Controllers\BlogController@index,500,1295.1560020447,request
