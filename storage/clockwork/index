@@ -461,3 +461,14 @@
 1751730101-4494-51550970,1751730101.1434,GET,/,App\Http\Controllers\BlogController@index,500,10075.437068939,request
 1751730156-6548-1678600226,1751730156.5024,GET,/,App\Http\Controllers\BlogController@index,500,3308.984041214,request
 1751730170-2871-2091594602,1751730170.0975,GET,/,App\Http\Controllers\BlogController@index,500,1295.1560020447,request
+1751901002-4597-3355966,1751901002.2936,GET,/,App\Http\Controllers\BlogController@index,500,1301.5778064728,request
+1751901336-7112-935882248,1751901336.2831,GET,/,App\Http\Controllers\BlogController@index,500,3060.497045517,request
+1752068253-2078-880355335,1752068252.4885,GET,/,App\Http\Controllers\BlogController@index,500,24617.265939713,request
+1752068291-3234-604665166,1752068290.6453,GET,/,App\Http\Controllers\BlogController@index,500,5498.3220100403,request
+1752068464-2026-1823781148,1752068463.6118,GET,/,App\Http\Controllers\BlogController@index,200,1410.6261730194,request
+1752068501-9207-839193896,1752068501.4618,GET,/?category=frontend,App\Http\Controllers\BlogController@index,200,909.55209732056,request
+1752068676-0963-1029772894,1752068675.4518,GET,/?category=frontend,App\Http\Controllers\BlogController@index,500,8128.8468837738,request
+1752068731-6141-1587619990,1752068731.1846,GET,/?category=frontend,App\Http\Controllers\BlogController@index,200,864.10999298096,request
+1752068738-3056-1000140627,1752068737.8555,GET,/?category=backend,App\Http\Controllers\BlogController@index,200,871.24490737915,request
+1752068742-0549-1133989931,1752068741.5778,GET,/?category=backend,App\Http\Controllers\BlogController@index,200,894.23298835754,request
+1752068840-2532-1059069788,1752068839.5877,GET,/?category=backend,App\Http\Controllers\BlogController@index,200,1278.6700725555,request
