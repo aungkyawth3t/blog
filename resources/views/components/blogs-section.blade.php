@@ -9,6 +9,20 @@
   </div>
   <form action="" method="GET" class="my-3">
     <div class="input-group mb-3">
+      @if(request('category'))
+        <input
+          name="category"
+          value="{{ request('category') }}"
+          type="hidden"
+        />
+      @endif
+      @if(request('username'))
+        <input
+          name="username"
+          value="{{ request('username') }}"
+          type="hidden"
+        />
+      @endif
       <input
         name="search"
         value="{{ request('search') }}"
