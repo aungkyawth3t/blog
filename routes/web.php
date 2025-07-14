@@ -4,6 +4,7 @@ use App\Models\User;
 use App\Models\Category;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AuthController;
 use App\Http\Controllers\BlogController;
 
 Route::get('/', [BlogController::class, 'index'])->name('blogs.index');
@@ -14,3 +15,5 @@ Route::get('/blogs/{blog:slug}', [BlogController::class, 'show'])->where('blog',
 //         'blogs' => $user->blogs
 //     ]);
 // });
+
+Route::get('/register', [AuthController::class, 'create']);
