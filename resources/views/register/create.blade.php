@@ -4,24 +4,42 @@
       <div class="col-md-5 mx-auto">
          <div class="card px-4 py-3 my-3 shadow-sm">
           <h2 class="text-primary text-center">Register Form</h2>
-          <form>
+          <form method="POST" action="">
+            @csrf
             <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Name</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" name="name" value="{{ old('name') }}" aria-describedby="emailHelp">
+              @error('name')
+                <p class="text-danger"> {{ $message }} </p>
+              @enderror
             </div>
             <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label"> Username </label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <label for="userName" class="form-label"> Username </label>
+              <input type="text" class="form-control" name="username" value="{{ old('username') }}" aria-describedby="emailHelp">
+              @error('username')
+                <p class="text-danger"> {{ $message }} </p>
+              @enderror
             </div>
             <div class="mb-3">
               <label for="exampleInputEmail1" class="form-label">Email address</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <input type="email" class="form-control" name="email" value="{{ old('email') }}" aria-describedby="emailHelp">
+              @error('email')
+                <p class="text-danger"> {{ $message }} </p>
+              @enderror
             </div>
             <div class="mb-3">
               <label for="exampleInputPassword1" class="form-label">Password</label>
-              <input type="password" class="form-control" id="exampleInputPassword1">
+              <input type="password" class="form-control" name="password">
+              @error('password')
+                <p class="text-danger"> {{ $message }} </p>
+              @enderror
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
+            {{-- <ul>
+              @foreach ($errors->all() as $error)
+                <li> {{ $error }} </li>
+              @endforeach
+            </ul> --}}
           </form>
          </div>
       </div>

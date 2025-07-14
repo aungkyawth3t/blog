@@ -17,3 +17,4 @@ Route::get('/blogs/{blog:slug}', [BlogController::class, 'show'])->where('blog',
 // });
 
 Route::get('/register', [AuthController::class, 'create']);
+Route::post('/register', [AuthController::class, 'store']);
