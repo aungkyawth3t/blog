@@ -24,7 +24,14 @@ class AuthController extends Controller
         // dd($validatedFormData);
         // $validatedFormData['password'] = bcrypt($validatedFormData['password']);
         $new_user = User::create($validatedFormData);
-        // session()->flash('success', 'Welcome, Dear '. $new_user->name);
+        //login
+        auth()->login($new_user);
         return redirect('/')->with('success', 'Welcome, Dear '. $new_user->name);
+    }
+
+    public function logout()
+    {
+        auth()->logout();
+        return redirect('/')->with('success', 'Goodbye!');
     }
 }
