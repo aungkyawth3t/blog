@@ -10,7 +10,7 @@ class AuthController extends Controller
 {
     public function create()
     {
-        return view('register.create');
+        return view('auth.register');
     }
 
     public function store()
@@ -27,6 +27,24 @@ class AuthController extends Controller
         //login
         auth()->login($new_user);
         return redirect('/')->with('success', 'Welcome, Dear '. $new_user->name);
+    }
+
+    public function login()
+    {
+        return view('auth.login');
+    }
+
+    public function storeLogin()
+    {
+        $validatedLoginData = request()->validate([
+            'email' => ['required', 'email', 'max:255', 'exists:users,email'],
+            'password' => ['required', 'min:8', 'max:255'],
+        ], [
+            'email.required' => 'Email address is required!',
+            'password.required' => 'Password is required!',
+            'password.min' => 'Password must be at least 8 characters!'
+        ]);
+        dd($validatedLoginData);
     }
 
     public function logout()

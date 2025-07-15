@@ -8,6 +8,7 @@
       {{-- @auth @else @endauth, @guest @else @endguest --}}
       @if (!auth()->check())
         <a href="/register" class="nav-link">Register</a>
+        <a href="/login" class="nav-link">Login</a>
       @else
         <a href="" class="nav-link text-white fw-bold ms-4"> {{ auth()->user()->name }} </a>
       @endif
