@@ -701,3 +701,17 @@
 1752507840-1385-866188630,1752507839.8819,GET,/register,App\Http\Controllers\AuthController@create,200,396.51203155518,request
 1752507856-8557-247992307,1752507856.6725,POST,/register,App\Http\Controllers\AuthController@store,302,330.650806427,request
 1752507857-1639-374056395,1752507857.0202,GET,/register,App\Http\Controllers\AuthController@create,200,228.53994369507,request
+1752587695-4040-1527690622,1752587694.4223,GET,/,App\Http\Controllers\BlogController@index,200,2868.9639568329,request
+1752587975-2139-971914935,1752587974.7522,GET,/register,App\Http\Controllers\AuthController@create,200,744.02093887329,request
+1752588501-6054-1156657163,1752588501.2518,GET,/register,App\Http\Controllers\AuthController@create,200,616.46199226379,request
+1752588505-3277-330860282,1752588505.1507,GET,/,App\Http\Controllers\BlogController@index,200,393.09310913086,request
+1752588507-0596-1943742960,1752588506.8795,GET,/register,App\Http\Controllers\AuthController@create,200,299.29518699646,request
+1752588529-8105-1244741809,1752588529.6121,POST,/register,App\Http\Controllers\AuthController@store,302,1372.8108406067,request
+1752588531-1673-364025833,1752588531.0161,GET,/register,App\Http\Controllers\AuthController@create,200,264.66393470764,request
+1752588533-8431-23997495,1752588533.6703,POST,/register,App\Http\Controllers\AuthController@store,302,516.66617393494,request
+1752588534-3403-1353127596,1752588534.2094,GET,/register,App\Http\Controllers\AuthController@create,200,219.17605400085,request
+1752588536-7718-25205949,1752588536.6082,POST,/register,App\Http\Controllers\AuthController@store,302,264.72496986389,request
+1752588537-0328-581172736,1752588536.8915,GET,/register,App\Http\Controllers\AuthController@create,200,230.2770614624,request
+1752589008-1763-56571038,1752589007.598,GET,/register,App\Http\Controllers\AuthController@create,200,878.36217880249,request
+1752589013-7763-1334361320,1752589013.564,POST,/register,App\Http\Controllers\AuthController@store,302,1110.4760169983,request
+1752589014-9007-924280200,1752589014.6996,GET,/,App\Http\Controllers\BlogController@index,200,447.94893264771,request

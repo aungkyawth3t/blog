@@ -21,6 +21,8 @@ class AuthController extends Controller
             'email' => ['required', 'email', Rule::unique('users', 'email')],
             'password' => 'required|min:8'
         ]);
+        // dd($validatedFormData);
+        // $validatedFormData['password'] = bcrypt($validatedFormData['password']);
         User::create($validatedFormData);
         return redirect('/');
     }
