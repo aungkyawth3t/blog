@@ -398,3 +398,15 @@
 1752672592-7477-1899942351,1752672592.0179,GET,/,App\Http\Controllers\BlogController@index,200,1061.4039897919,request
 1752672603-8155-2136294521,1752672603.6324,GET,/register,App\Http\Controllers\AuthController@create,302,310.94813346863,request
 1752672604-1079-277553208,1752672603.9544,GET,/,App\Http\Controllers\BlogController@index,200,313.47584724426,request
+1752674237-3703-1447112310,1752674218.441,GET,/,App\Http\Controllers\BlogController@index,200,40860.802173615,request
+1752674259-8218-963135069,1752674259.5872,GET,/,App\Http\Controllers\BlogController@index,200,441.86997413635,request
+1752676240-1779-1203430855,1752676239.951,GET,/,App\Http\Controllers\BlogController@index,200,5927.237033844,request
+1752676269-8620-1840758452,1752676269.6944,GET,/blogs/sit-eligendi-repudiandae-numquam-velit-amet-nesciunt-est,App\Http\Controllers\BlogController@show,200,832.26203918457,request
+1752676798-0499-1516079447,1752676797.8231,GET,/blogs/sit-eligendi-repudiandae-numquam-velit-amet-nesciunt-est,App\Http\Controllers\BlogController@show,200,764.29009437561,request
+1752676958-9556-543194249,1752676958.8134,GET,/blogs/sit-eligendi-repudiandae-numquam-velit-amet-nesciunt-est,App\Http\Controllers\BlogController@show,200,623.96907806396,request
+1752676967-9415-1964517911,1752676967.8411,GET,/blogs/sit-eligendi-repudiandae-numquam-velit-amet-nesciunt-est,App\Http\Controllers\BlogController@show,200,223.94394874573,request
+1752676969-5560-1299432552,1752676969.4499,GET,/blogs/sit-eligendi-repudiandae-numquam-velit-amet-nesciunt-est,App\Http\Controllers\BlogController@show,200,240.1328086853,request
+1752677063-3581-1099366874,1752677063.2557,GET,/blogs/sit-eligendi-repudiandae-numquam-velit-amet-nesciunt-est,App\Http\Controllers\BlogController@show,200,391.1190032959,request
+1752677239-5160-127960211,1752677239.381,GET,/blogs/sit-eligendi-repudiandae-numquam-velit-amet-nesciunt-est,App\Http\Controllers\BlogController@show,200,710.78205108643,request
+1752677251-5453-1708058314,1752677251.4387,GET,/blogs/sit-eligendi-repudiandae-numquam-velit-amet-nesciunt-est,App\Http\Controllers\BlogController@show,200,366.69516563416,request
+1752677379-6629-301124656,1752677379.546,GET,/blogs/categories/frontend,,404,186.07521057129,request
