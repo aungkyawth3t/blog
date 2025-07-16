@@ -427,3 +427,4 @@
 1752680247-7144-1593362835,1752680247.4878,GET,/blogs/totam-nihil-excepturi-aut-consequatur,App\Http\Controllers\BlogController@show,200,442.85488128662,request
 1752680286-5317-286468113,1752680286.3038,GET,/blogs/recusandae-consectetur-nesciunt-error-ipsam-fuga,App\Http\Controllers\BlogController@show,200,460.62517166138,request
 1752680396-5105-475942060,1752680396.1866,GET,/blogs/recusandae-consectetur-nesciunt-error-ipsam-fuga,App\Http\Controllers\BlogController@show,200,619.47011947632,request
+1752680479-3035-88540100,1752680479.183,GET,/blogs/recusandae-consectetur-nesciunt-error-ipsam-fuga,App\Http\Controllers\BlogController@show,200,276.96704864502,request
