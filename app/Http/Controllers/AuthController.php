@@ -44,7 +44,16 @@ class AuthController extends Controller
             'password.required' => 'Password is required!',
             'password.min' => 'Password must be at least 8 characters!'
         ]);
-        dd($validatedLoginData);
+        // dd($validatedLoginData);
+        // if user credenditlas is correct -> redirect home
+        if(auth()->attempt($validatedLoginData)) {
+            return redirect('/')->with('success', 'Logged in successfully');
+        } else {
+            // if user credentials is wrong -> redirect back with error
+            return redirect()->back()->withErrors([
+                'email' => 'Wrong credentials!'
+            ]);
+        }
     }
 
     public function logout()
