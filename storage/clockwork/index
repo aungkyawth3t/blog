@@ -428,3 +428,14 @@
 1752680286-5317-286468113,1752680286.3038,GET,/blogs/recusandae-consectetur-nesciunt-error-ipsam-fuga,App\Http\Controllers\BlogController@show,200,460.62517166138,request
 1752680396-5105-475942060,1752680396.1866,GET,/blogs/recusandae-consectetur-nesciunt-error-ipsam-fuga,App\Http\Controllers\BlogController@show,200,619.47011947632,request
 1752680479-3035-88540100,1752680479.183,GET,/blogs/recusandae-consectetur-nesciunt-error-ipsam-fuga,App\Http\Controllers\BlogController@show,200,276.96704864502,request
+1752681467-2215-1266068993,1752681466.9788,GET,/blogs/recusandae-consectetur-nesciunt-error-ipsam-fuga,App\Http\Controllers\BlogController@show,404,701.5860080719,request
+1752681469-8689-1784697772,1752681469.7688,GET,/,App\Http\Controllers\BlogController@index,200,253.84593009949,request
+1752681470-8051-1739759758,1752681470.7101,GET,/,App\Http\Controllers\BlogController@index,200,215.62886238098,request
+1752681472-6302-976142119,1752681472.5146,GET,/blogs/odit-dolorem-necessitatibus-id-sint-beatae,App\Http\Controllers\BlogController@show,200,309.93103981018,request
+1752681720-5623-1251304242,1752681720.464,GET,/blogs/odit-dolorem-necessitatibus-id-sint-beatae,App\Http\Controllers\BlogController@show,200,243.25013160706,request
+1752682155-4760-669532496,1752682155.2939,GET,/blogs/odit-dolorem-necessitatibus-id-sint-beatae,App\Http\Controllers\BlogController@show,200,417.57082939148,request
+1752682187-9314-1846742255,1752682187.8318,GET,/blogs/odit-dolorem-necessitatibus-id-sint-beatae,App\Http\Controllers\BlogController@show,200,250.05698204041,request
+1752682227-5829-1067265373,1752682227.3466,GET,/blogs/odit-dolorem-necessitatibus-id-sint-beatae,App\Http\Controllers\BlogController@show,200,612.2989654541,request
+1752682252-5398-396703621,1752682252.3207,GET,/blogs/odit-dolorem-necessitatibus-id-sint-beatae,App\Http\Controllers\BlogController@show,200,500.80394744873,request
+1752682542-2615-286546142,1752682542.0649,GET,/blogs/odit-dolorem-necessitatibus-id-sint-beatae,App\Http\Controllers\BlogController@show,200,371.36101722717,request
+1752682556-1256-1101819203,1752682556.0321,GET,/blogs/odit-dolorem-necessitatibus-id-sint-beatae,App\Http\Controllers\BlogController@show,200,221.80700302124,request
