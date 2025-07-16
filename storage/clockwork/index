@@ -410,3 +410,4 @@
 1752677239-5160-127960211,1752677239.381,GET,/blogs/sit-eligendi-repudiandae-numquam-velit-amet-nesciunt-est,App\Http\Controllers\BlogController@show,200,710.78205108643,request
 1752677251-5453-1708058314,1752677251.4387,GET,/blogs/sit-eligendi-repudiandae-numquam-velit-amet-nesciunt-est,App\Http\Controllers\BlogController@show,200,366.69516563416,request
 1752677379-6629-301124656,1752677379.546,GET,/blogs/categories/frontend,,404,186.07521057129,request
+1752678116-7683-1284480312,1752678116.326,GET,/blogs/sit-eligendi-repudiandae-numquam-velit-amet-nesciunt-est,App\Http\Controllers\BlogController@show,200,1020.583152771,request
