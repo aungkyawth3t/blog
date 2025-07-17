@@ -19,6 +19,19 @@
       </div>
     </div>
 
+    <section class="container">
+      <div class="col-md-8 mx-auto">
+        <x-card-wrapper class="bg-secondary bg-opacity-75">
+          <form>
+            <div class="mb-3">
+              <textarea name="" id="" cols="10" rows="5" placeholder="Comment..." class="form-control border-0"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary float-end">Comment</button>
+          </form>
+        </x-card-wrapper>
+      </div>
+    </section>
+
     <x-comments :comments="$blog->comments"/>
     <x-subscribe/>
     <x-blogs_you_may_like :randomBlogs="$randomBlogs"/>
