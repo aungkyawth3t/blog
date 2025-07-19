@@ -10,7 +10,8 @@
         <a href="/register" class="nav-link">Register</a>
         <a href="/login" class="nav-link">Login</a>
       @else
-        <a href="" class="nav-link text-white fw-bold ms-4"> {{ auth()->user()->name }} </a>
+        <img src="{{ auth()->user()->avator }}" width="40" height="40" class="rounded-circle me-0" alt="">
+        <a href="" class="nav-link text-white fw-bold"> {{ auth()->user()->name }} </a>
       @endif
 
       @if (auth()->check())

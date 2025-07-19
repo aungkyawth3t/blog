@@ -21,14 +21,22 @@
 
     <section class="container">
       <div class="col-md-8 mx-auto">
-        <x-card-wrapper class="bg-secondary bg-opacity-75">
-          <form>
-            <div class="mb-3">
-              <textarea name="" id="" cols="10" rows="5" placeholder="Comment..." class="form-control border-0"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary float-end">Comment</button>
-          </form>
-        </x-card-wrapper>
+        @if (Auth::check())
+          <x-card-wrapper>
+            <form  action="{{ route('blogs.comments.store', $blog->slug) }}" method="POST">
+              @csrf
+              <div class="mb-3">
+                <textarea name="body" id="" cols="10" rows="5" placeholder="Comment..." class="form-control border-0 @error('body') is-invalid @enderror"></textarea>
+                @error('body')
+                  <div class="text-danger"> {{ $message }} </div>
+                @enderror
+              </div>
+              <button type="submit" class="btn btn-primary float-end">Comment</button>
+            </form>
+          </x-card-wrapper>
+        @else
+          <p class="text-center"> Please <a href="/login">login</a> first to comment.</p>
+        @endif
       </div>
     </section>
 
