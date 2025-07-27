@@ -20,6 +20,6 @@ class CommentController extends Controller
             'body' => request('body'),
             'user_id' => auth()->id()
         ]);
-        return back();
+        return redirect('blogs/'.$blog->slug);
     }
 }

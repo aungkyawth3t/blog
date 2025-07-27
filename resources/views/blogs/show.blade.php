@@ -33,7 +33,7 @@
     </section>
 
     @if (!empty($blog->comments && count($blog->comments) > 0))
-      <x-comments :comments="$blog->comments"/>
+      <x-comments :comments="$blog->comments()->latest()->paginate(3)"/>
     @endif
     <x-blogs_you_may_like :randomBlogs="$randomBlogs"/>
 </x-layout>
