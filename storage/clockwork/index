@@ -569,3 +569,7 @@
 1753634719-4553-1516473358,1753634719.2249,POST,/login,App\Http\Controllers\AuthController@storeLogin,302,685.13798713684,request
 1753634720-2263-1367365270,1753634719.9243,GET,/,App\Http\Controllers\BlogController@index,200,652.92191505432,request
 1753634723-4574-613237091,1753634723.2435,GET,/,App\Http\Controllers\BlogController@index,200,429.14509773254,request
+1753634941-6235-1463221000,1753634941.4879,GET,/,App\Http\Controllers\BlogController@index,200,1135.3099346161,request
+1753635063-3885-813724650,1753635063.1737,GET,/,App\Http\Controllers\BlogController@index,200,427.04105377197,request
+1753635067-4324-1587198750,1753635067.2855,GET,/blogs/suscipit-laboriosam-corrupti-ut-eligendi-exercitationem-est-sapiente,App\Http\Controllers\BlogController@show,200,902.57406234741,request
+1753636157-0705-2045975611,1753636156.5317,GET,/blogs/suscipit-laboriosam-corrupti-ut-eligendi-exercitationem-est-sapiente,App\Http\Controllers\BlogController@show,200,1150.995016098,request
