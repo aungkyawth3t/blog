@@ -22,25 +22,16 @@
     <section class="container">
       <div class="col-md-8 mx-auto">
         @if (Auth::check())
-          <x-card-wrapper>
-            <form  action="{{ route('blogs.comments.store', $blog->slug) }}" method="POST">
-              @csrf
-              <div class="mb-3">
-                <textarea name="body" id="" cols="10" rows="5" placeholder="Comment..." class="form-control border-0 @error('body') is-invalid @enderror"></textarea>
-                @error('body')
-                  <div class="text-danger"> {{ $message }} </div>
-                @enderror
-              </div>
-              <button type="submit" class="btn btn-primary float-end">Comment</button>
-            </form>
-          </x-card-wrapper>
+          <x-comment-form :blog="$blog"/>
         @else
           <p class="text-center"> Please <a href="/login">login</a> first to comment.</p>
         @endif
       </div>
     </section>
 
-    <x-comments :comments="$blog->comments"/>
+    @if (!empty($blog->comments && count($blog->comments) > 0))
+      <x-comments :comments="$blog->comments"/>
+    @endif
     <x-subscribe/>
     <x-blogs_you_may_like :randomBlogs="$randomBlogs"/>
 </x-layout>
