@@ -583,3 +583,17 @@
 1753636665-7444-1138730050,1753636665.631,GET,/blogs/suscipit-laboriosam-corrupti-ut-eligendi-exercitationem-est-sapiente?page=2,App\Http\Controllers\BlogController@show,200,240.08512496948,request
 1753636668-4621-879695782,1753636668.3522,POST,/blogs/suscipit-laboriosam-corrupti-ut-eligendi-exercitationem-est-sapiente/comments,App\Http\Controllers\CommentController@store,302,617.89989471436,request
 1753636669-0815-2091600169,1753636668.982,GET,/blogs/suscipit-laboriosam-corrupti-ut-eligendi-exercitationem-est-sapiente,App\Http\Controllers\BlogController@show,200,244.3630695343,request
+1753637170-5785-454066712,1753637170.152,GET,/blogs/suscipit-laboriosam-corrupti-ut-eligendi-exercitationem-est-sapiente,App\Http\Controllers\BlogController@show,200,2817.9788589478,request
+1753637736-3281-2010708642,1753637735.9176,GET,/blogs/suscipit-laboriosam-corrupti-ut-eligendi-exercitationem-est-sapiente,App\Http\Controllers\BlogController@show,200,2430.4540157318,request
+1753637760-9461-926852017,1753637760.7025,GET,/blogs/suscipit-laboriosam-corrupti-ut-eligendi-exercitationem-est-sapiente,App\Http\Controllers\BlogController@show,200,532.50813484192,request
+1753637783-8370-1458958035,1753637783.5784,GET,/blogs/suscipit-laboriosam-corrupti-ut-eligendi-exercitationem-est-sapiente,App\Http\Controllers\BlogController@show,200,587.46194839478,request
+1753637786-6074-818402374,1753637786.3631,GET,/blogs/suscipit-laboriosam-corrupti-ut-eligendi-exercitationem-est-sapiente,App\Http\Controllers\BlogController@show,200,530.60603141785,request
+1753637788-8093-342941543,1753637788.5988,GET,/blogs/suscipit-laboriosam-corrupti-ut-eligendi-exercitationem-est-sapiente?page=2,App\Http\Controllers\BlogController@show,200,495.45407295227,request
+1753637790-4436-1287279985,1753637790.2023,GET,/blogs/suscipit-laboriosam-corrupti-ut-eligendi-exercitationem-est-sapiente?page=1,App\Http\Controllers\BlogController@show,200,534.27577018738,request
+1753637791-4194-110069559,1753637791.2175,GET,/blogs/suscipit-laboriosam-corrupti-ut-eligendi-exercitationem-est-sapiente?page=2,App\Http\Controllers\BlogController@show,200,498.61907958984,request
+1753637801-1864-2044126190,1753637800.9758,GET,/blogs/suscipit-laboriosam-corrupti-ut-eligendi-exercitationem-est-sapiente,App\Http\Controllers\BlogController@show,200,469.17700767517,request
+1753637805-3271-1312011228,1753637805.1102,GET,/blogs/,,404,762.3438835144,request
+1753637808-4062-1309591756,1753637808.176,GET,/,App\Http\Controllers\BlogController@index,200,1253.7820339203,request
+1753637816-3114-297182129,1753637816.1129,GET,/blogs/suscipit-laboriosam-corrupti-ut-eligendi-exercitationem-est-sapiente,App\Http\Controllers\BlogController@show,200,445.88994979858,request
+1753637886-2501-1005070151,1753637885.9007,GET,/blogs/suscipit-laboriosam-corrupti-ut-eligendi-exercitationem-est-sapiente,App\Http\Controllers\BlogController@show,200,762.51792907715,request
+1753637914-3370-1885285956,1753637914.1255,GET,/blogs/suscipit-laboriosam-corrupti-ut-eligendi-exercitationem-est-sapiente,App\Http\Controllers\BlogController@show,200,456.03084564209,request

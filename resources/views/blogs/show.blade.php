@@ -14,7 +14,13 @@
             <div>Author - <a href="/users/{{ $blog->author->username }}">{{ $blog->author->name }}</a> </div>
             <div class="text-secondary">{{ $blog->created_at->diffForHumans() }} </div>
             <div class="text-secondary">
-              <button class="btn btn-warning">subscribe</button>
+              <form action="" method="POST">
+                @if(auth()->user()->isSubscribed($blog))
+                  <button type="submit" class="btn btn-danger">Unsubscribe</button>
+                @else
+                  <button type="submit" class="btn btn-warning">Subscribe</button>
+                @endif
+              </form>
             </div>
           </div>
           <p class="lh-md mt-3"> {{ $blog->body }} </p>
