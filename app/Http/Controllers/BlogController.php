@@ -19,4 +19,14 @@ class BlogController extends Controller
     {
         return view('blogs.show', ['blog' => $blog,'randomBlogs' => Blog::inRandomOrder()->take(3)->get()]);
     }
+
+    public function subscriptionHandler(Blog $blog)
+    {
+        if(auth()->user()->isSubscribed($blog)){
+            $blog->unSubscribe();
+        } else {
+            $blog->subscribe();
+        }
+        return back();
+    }
 }
