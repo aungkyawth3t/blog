@@ -29,3 +29,4 @@ Route::post('/logout', [AuthController::class, 'logout'])->middleware('auth');
 
 Route::post('/blogs/{blog:slug}/subscription', [BlogController::class, 'subscriptionHandler']);
 Route::get('/admin/blogs/create', [BlogController::class, 'create'])->middleware(isAdmin::class);
+Route::post('/admin/blogs/create', [BlogController::class, 'store'])->name('blogs.store')->middleware('isAdmin');
