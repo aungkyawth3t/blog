@@ -683,3 +683,12 @@
 1753881107-0264-319189843,1753881106.8622,GET,/blogs/fuga-enim-saepe-et-odio-nemo-similique,App\Http\Controllers\BlogController@show,200,681.33997917175,request
 1753881133-2644-873948087,1753881132.9426,POST,/blogs/fuga-enim-saepe-et-odio-nemo-similique/comments,App\Http\Controllers\CommentController@store,302,25139.723062515,request
 1753881162-2987-921185229,1753881161.9882,GET,/blogs/fuga-enim-saepe-et-odio-nemo-similique,App\Http\Controllers\BlogController@show,200,643.89801025391,request
+1753885304-9023-457141814,1753885304.1601,GET,/blogs/fuga-enim-saepe-et-odio-nemo-similique,App\Http\Controllers\BlogController@show,200,1735.7618808746,request
+1753886666-0931-519309881,1753886665.0943,GET,/blogs/fuga-enim-saepe-et-odio-nemo-similique,App\Http\Controllers\BlogController@show,200,2069.4510936737,request
+1753886825-4795-2125536436,1753886824.7631,POST,/blogs/fuga-enim-saepe-et-odio-nemo-similique/comments,App\Http\Controllers\CommentController@store,302,6478.1639575958,request
+1753886831-7048-1348473225,1753886831.273,GET,/blogs/fuga-enim-saepe-et-odio-nemo-similique,App\Http\Controllers\BlogController@show,200,1119.2800998688,request
+1753887219-4853-1411059311,1753887218.7421,GET,/blogs/fuga-enim-saepe-et-odio-nemo-similique,App\Http\Controllers\BlogController@show,200,1655.280828476,request
+1753887228-8974-190323221,1753887228.43,POST,/blogs/fuga-enim-saepe-et-odio-nemo-similique/comments,App\Http\Controllers\CommentController@store,302,1063.9219284058,request
+1753887230-0032-1405669129,1753887229.5178,GET,/blogs/fuga-enim-saepe-et-odio-nemo-similique,App\Http\Controllers\BlogController@show,200,1080.4891586304,request
+1753887897-9386-1144655651,1753887897.2462,POST,/blogs/fuga-enim-saepe-et-odio-nemo-similique/comments,App\Http\Controllers\CommentController@store,302,1359.1158390045,request
+1753887899-0913-2294919,1753887898.6347,GET,/blogs/fuga-enim-saepe-et-odio-nemo-similique,App\Http\Controllers\BlogController@show,200,1076.7769813538,request
