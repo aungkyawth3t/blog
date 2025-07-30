@@ -15,6 +15,11 @@ class BlogController extends Controller
             ]);
     }
 
+    public function create()
+    {
+        return view('blogs.create');
+    }
+
     public function show(Blog $blog) 
     {
         return view('blogs.show', ['blog' => $blog,'randomBlogs' => Blog::inRandomOrder()->take(3)->get()]);

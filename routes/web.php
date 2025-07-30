@@ -2,6 +2,7 @@
 
 use App\Models\User;
 use App\Models\Category;
+use App\Http\Middleware\isAdmin;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
@@ -27,3 +28,4 @@ Route::post('/login', [AuthController::class, 'storeLogin'])->middleware('guest'
 Route::post('/logout', [AuthController::class, 'logout'])->middleware('auth');
 
 Route::post('/blogs/{blog:slug}/subscription', [BlogController::class, 'subscriptionHandler']);
+Route::get('/admin/blogs/create', [BlogController::class, 'create'])->middleware(isAdmin::class);
