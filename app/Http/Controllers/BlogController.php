@@ -29,10 +29,13 @@ class BlogController extends Controller
         $validatedFormData = request()->validate([
             'title' => ['required'],
             'slug' => ['required', Rule::unique('blogs', 'slug')],
-            'category_id' => ['required'],
+            'category_id' => ['required', Rule::exists('categories', 'id')],
             'intro' => ['required','max:20'],
             'body' => ['required', 'min:10']
+        ], [
+            'category_id.required' => 'category is required!'
         ]);
+        
         $validatedFormData['user_id'] = auth()->user()->id;
         Blog::create($validatedFormData);
         return redirect('/')->with('success', 'Blog posted successfully');

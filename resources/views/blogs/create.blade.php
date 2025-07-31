@@ -42,7 +42,7 @@
               <option {{ $category->id == old('category_id') ? 'selected' : '' }} value="{{ $category->id }}"> {{ $category->name }} </option>
               @endforeach
             </select>
-          <x-error name="category"/>
+          <x-error name="category_id"/>
         </div>
 
         <div class="mb-3">
