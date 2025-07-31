@@ -3,7 +3,7 @@
  <x-form.label :name="$name"/>
   <textarea 
     name="{{ $name }}" 
-    id="{{ $name }}"
+    id="{{ $name }} editor"
     class="form-control"
     cols="30" 
     rows="10"> {{ old($name) }} </textarea>

@@ -392,3 +392,13 @@
 1753976985-1025-2044478500,1753976984.7846,GET,/admin/blogs/create,App\Http\Controllers\BlogController@create,200,603.48677635193,request
 1753977154-2213-1899277853,1753977153.9488,GET,/admin/blogs/create,App\Http\Controllers\BlogController@create,200,2577.2078037262,request
 1753977211-0796-151678046,1753977210.8687,GET,/admin/blogs/create,App\Http\Controllers\BlogController@create,200,2958.389043808,request
+1753979143-8536-1745625017,1753979143.4903,GET,/admin/blogs/create,App\Http\Controllers\BlogController@create,200,1472.4040031433,request
+1753979145-9473-1413298217,1753979145.7098,GET,/admin/blogs/ckeditor5/ckeditor5.js,,404,842.21887588501,request
+1753979200-1432-579084028,1753979199.9583,GET,/admin/blogs/create,App\Http\Controllers\BlogController@create,200,2852.5309562683,request
+1753979205-3727-1404558464,1753979204.7929,GET,/admin/blogs/ckeditor5/ckeditor5.js,,404,903.46598625183,request
+1753979221-3132-769453377,1753979220.7936,GET,/admin/blogs/create,App\Http\Controllers\BlogController@create,200,4215.3549194336,request
+1753979225-6706-182402355,1753979225.1487,GET,/admin/blogs/ckeditor5/ckeditor5.js,,404,862.08295822144,request
+1753979252-1286-1856280964,1753979251.9001,GET,/admin/blogs/create,App\Http\Controllers\BlogController@create,200,3656.1980247498,request
+1753979255-9181-1049141029,1753979255.6586,GET,/admin/blogs/ckeditor5/ckeditor5.js,,404,350.58379173279,request
+1753979325-1186-779918288,1753979324.4756,GET,/admin/blogs/create,App\Http\Controllers\BlogController@create,200,2604.6090126038,request
+1753979329-4519-861327609,1753979329.0305,GET,/admin/blogs/ckeditor5/ckeditor5.js,,404,683.87508392334,request

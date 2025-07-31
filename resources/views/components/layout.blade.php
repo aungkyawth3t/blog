@@ -22,4 +22,22 @@
         crossorigin="anonymous"
         ></script>
     </body>
+    <script type="importmap">
+		{
+			"imports": {
+				"ckeditor5": "./ckeditor5/ckeditor5.js",
+				"ckeditor5/": "./ckeditor5/"
+			}
+		}
+		</script>
+	<script src="https://cdn.ckbox.io/ckbox/2.6.1/ckbox.js" crossorigin></script>
+	<script type="module" src="/ckeditor/main.js"></script>
+	<!-- A friendly reminder to run on a server, remove this during the integration. -->
+	<script>
+		window.onload = function () {
+			if (window.location.protocol === "file:") {
+				alert("This sample requires an HTTP server. Please serve this file with a web server.");
+			}
+		};
+	</script>
 </html>

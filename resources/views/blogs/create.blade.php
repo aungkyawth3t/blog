@@ -7,7 +7,7 @@
         <x-form.input name="title"/>
         <x-form.input name="slug"/>
         <x-form.input name="intro"/>
-        <x-form.input name="body"/>
+        <x-form.textarea name="body"/>
         <x-form.input name="thumbnail" type="file"/>
 
         <x-form.input-wrapper>
