@@ -26,6 +26,7 @@ class BlogController extends Controller
 
     public function store()
     {
+        $path = request()->file('thumbnail')->store('thumbnails');
         $validatedFormData = request()->validate([
             'title' => ['required'],
             'slug' => ['required', Rule::unique('blogs', 'slug')],
@@ -35,8 +36,9 @@ class BlogController extends Controller
         ], [
             'category_id.required' => 'category is required!'
         ]);
-        
+
         $validatedFormData['user_id'] = auth()->user()->id;
+        $validatedFormData['thumbnail'] = $path;
         Blog::create($validatedFormData);
         return redirect('/')->with('success', 'Blog posted successfully');
     }

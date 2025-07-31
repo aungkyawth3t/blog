@@ -2,7 +2,7 @@
   <h1 class="my-3 text-center">Blog Create </h1>
   <div class="col-md-8 mx-auto">
     <x-card-wrapper>
-      <form action="{{ route('blogs.store') }}" method="POST">
+      <form action="{{ route('blogs.store') }}" method="POST" enctype="multipart/form-data">
         @csrf
         <div class="mb-3">
           <label 
@@ -69,6 +69,18 @@
             class="form-control"
             cols="30" 
             rows="10"> {{ old('body') }} </textarea>
+          <x-error name="body"/>
+        </div>
+
+        <div class="mb-3">
+          <label 
+            for="thumbnail"
+            class="form-label"> Thumbnail </label>
+          <input 
+            type="file"
+            name="thumbnail"
+            id="thumbnail"
+            class="form-control">
           <x-error name="body"/>
         </div>
         <button type="submit" class="btn btn-info text-white px-4"> Post </button>
