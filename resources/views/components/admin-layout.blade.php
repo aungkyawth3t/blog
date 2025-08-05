@@ -9,23 +9,13 @@
           </a>
           <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
             <li class="nav-item">
-              <a href="#" class="nav-link align-middle px-0 text-dark">
+              <a href="{{ url('admin/blogs') }}" class="nav-link align-middle px-0 text-dark">
                 <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">Dashboard</span>
               </a>
             </li>
             <li>
-              <a href="#" class="nav-link px-0 align-middle text-dark">
-                <i class="fs-4 bi-people"></i> <span class="ms-1 d-none d-sm-inline">Users</span>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="nav-link px-0 align-middle text-dark">
-                <i class="fs-4 bi-table"></i> <span class="ms-1 d-none d-sm-inline">Blogs</span>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="nav-link px-0 align-middle text-dark">
-                <i class="fs-4 bi-grid"></i> <span class="ms-1 d-none d-sm-inline">Products</span>
+              <a href="{{ url('admin/blogs/create') }}" class="nav-link px-0 align-middle text-dark">
+                <i class="bi bi-text-paragraph fs-4"></i> <span class="ms-1 d-none d-sm-inline">Create Blogs</span>
               </a>
             </li>
             <li>

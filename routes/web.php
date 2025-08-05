@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\CommentController;
+use App\Http\Controllers\AdminBlogController;
 
 Route::get('/', [BlogController::class, 'index'])->name('blogs.index');
 Route::get('/blogs/{blog:slug}', [BlogController::class, 'show'])->where('blog', '[A-z\d\-_]+');
@@ -28,5 +29,6 @@ Route::post('/login', [AuthController::class, 'storeLogin'])->middleware('guest'
 Route::post('/logout', [AuthController::class, 'logout'])->middleware('auth');
 
 Route::post('/blogs/{blog:slug}/subscription', [BlogController::class, 'subscriptionHandler']);
-Route::get('/admin/blogs/create', [BlogController::class, 'create'])->middleware(isAdmin::class);
-Route::post('/admin/blogs/create', [BlogController::class, 'store'])->name('blogs.store')->middleware('isAdmin');
+Route::get('/admin/blogs', [AdminBlogController::class, 'index'])->middleware(isAdmin::class);
+Route::get('/admin/blogs/create', [AdminBlogController::class, 'create'])->middleware(isAdmin::class);
+Route::post('/admin/blogs/create', [AdminBlogController::class, 'store'])->name('blogs.store')->middleware('isAdmin');
