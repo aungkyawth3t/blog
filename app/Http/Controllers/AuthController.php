@@ -47,7 +47,11 @@ class AuthController extends Controller
         // dd($validatedLoginData);
         // if user credenditlas is correct -> redirect home
         if(auth()->attempt($validatedLoginData)) {
-            return redirect('/')->with('success', 'Logged in successfully');
+            if(auth()->user()->is_admin) {
+                return redirect('admin/blogs')->with('success', 'Logged in successfully');
+            } else {
+                return redirect('/')->with('success', 'Logged in successfully');
+            }
         } else {
             // if user credentials is wrong -> redirect back with error
             return redirect()->back()->withErrors([

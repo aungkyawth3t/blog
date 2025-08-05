@@ -30,5 +30,6 @@ Route::post('/logout', [AuthController::class, 'logout'])->middleware('auth');
 
 Route::post('/blogs/{blog:slug}/subscription', [BlogController::class, 'subscriptionHandler']);
 Route::get('/admin/blogs', [AdminBlogController::class, 'index'])->middleware(isAdmin::class);
+Route::delete('/admin/blogs/{blog:slug}/delete', [AdminBlogController::class, 'destroy'])->name('admin.blog.delete')->middleware(isAdmin::class);
 Route::get('/admin/blogs/create', [AdminBlogController::class, 'create'])->middleware(isAdmin::class);
 Route::post('/admin/blogs/create', [AdminBlogController::class, 'store'])->name('blogs.store')->middleware('isAdmin');
