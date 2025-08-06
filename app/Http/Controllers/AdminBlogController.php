@@ -19,7 +19,15 @@ class AdminBlogController extends Controller
     public function create()
     {
         $categories = Category::all();
-        return view('blogs.create', compact('categories'));
+        return view('admin.blogs.create', compact('categories'));
+    }
+
+    public function edit(Blog $blog)
+    {
+        return view('admin.blogs.edit', [
+            'blog' => $blog,
+            'categories' => Category::all()
+        ]);
     }
 
     public function store()

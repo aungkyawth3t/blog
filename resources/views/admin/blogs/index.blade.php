@@ -19,7 +19,7 @@
           <tr>
             <td> {{ $blog->title }} </td>
             <td> {{ $blog->intro }} </td>
-            <td> <a href="" class="btn btn-warning rounded-3"> <i class="bi bi-pencil-square fs-4"></i> </a> </td>
+            <td> <a href="/admin/blogs/{{ $blog->slug }}/edit" class="btn btn-warning rounded-3"> <i class="bi bi-pencil-square fs-4"></i> </a> </td>
             <td>
               <form action="{{ route('admin.blog.delete', $blog->slug)}}" method="POST">
                 @csrf
