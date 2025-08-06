@@ -17,7 +17,9 @@
       <tbody>
       @foreach ($blogs as $blog)
           <tr>
-            <td> {{ $blog->title }} </td>
+            <td>
+              <a href="/blogs/{{ $blog->slug }}" target="_blank"> {{ $blog->title }} </a>
+            </td>
             <td> {{ $blog->intro }} </td>
             <td> <a href="/admin/blogs/{{ $blog->slug }}/edit" class="btn btn-warning rounded-3"> <i class="bi bi-pencil-square fs-4"></i> </a> </td>
             <td>

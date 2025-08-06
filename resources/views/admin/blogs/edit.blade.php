@@ -2,8 +2,9 @@
   <h1 class="my-3 text-center">Blog Edit </h1>
   <div class="col-md-8 mx-auto">
     <x-card-wrapper>
-      <form action="{{ route('blogs.store') }}" method="POST" enctype="multipart/form-data">
+      <form action="/admin/blogs/{{ $blog->slug }}/update" method="POST" enctype="multipart/form-data">
         @csrf
+        @method('PATCH')
         <x-form.input name="title" value="{{ $blog->title }}"/>
         <x-form.input name="slug" value="{{ $blog->slug }}"/>
         <x-form.input name="intro" value="{{ $blog->intro }}"/>
