@@ -22,7 +22,7 @@
           </select>
           <x-error name="category_id"/>
         </x-form.input-wrapper>
-        <button type="submit" class="btn btn-info text-white px-4"> Post </button>
+        <button type="submit" class="btn btn-info text-white px-4"> Update </button>
       </form>
     </x-card-wrapper>
   </div>
