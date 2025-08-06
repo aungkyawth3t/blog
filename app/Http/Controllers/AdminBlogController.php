@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Blog;
 use App\Models\Category;
 use Illuminate\Http\Request;
-use Illuminate\Contracts\Validation\Rule;
+use Illuminate\Validation\Rule;
 
 class AdminBlogController extends Controller
 {
