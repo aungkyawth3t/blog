@@ -1,11 +1,11 @@
 <x-layout>
 <!-- single blog section -->
-    <div class="container">
+    <div class="container my-3">
       <div class="row">
         <div class="col-md-6 mx-auto text-center">
           <img
             src="/storage/{{ $blog->thumbnail }}"
-            class="card-img-top"
+            class="card-img-top rounded-5"
             alt="..."
           />
           <h3 class="my-3"> {{ $blog->title }} </h3>

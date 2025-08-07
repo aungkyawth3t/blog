@@ -14,6 +14,7 @@ Route::get('/', [BlogController::class, 'index'])->name('blogs.index');
 Route::get('/blogs/{blog:slug}', [BlogController::class, 'show'])->where('blog', '[A-z\d\-_]+');
 
 Route::post('blogs/{blog:slug}/comments', [CommentController::class, 'store'])->name('blogs.comments.store');
+Route::post('/blogs/{blog:slug}/subscription', [BlogController::class, 'subscriptionHandler']);
 
 // Route::get('users/{user:username}', function (User $user) {
 //     return view('blogs' , [
@@ -23,15 +24,15 @@ Route::post('blogs/{blog:slug}/comments', [CommentController::class, 'store'])->
 
 Route::get('/register', [AuthController::class, 'create'])->middleware('guest');
 Route::post('/register', [AuthController::class, 'store'])->middleware('guest');
-
 Route::get('/login', [AuthController::class, 'login'])->middleware('guest');
 Route::post('/login', [AuthController::class, 'storeLogin'])->middleware('guest');
 Route::post('/logout', [AuthController::class, 'logout'])->middleware('auth');
 
-Route::post('/blogs/{blog:slug}/subscription', [BlogController::class, 'subscriptionHandler']);
-Route::get('/admin/blogs', [AdminBlogController::class, 'index'])->middleware(isAdmin::class);
-Route::delete('/admin/blogs/{blog:slug}/delete', [AdminBlogController::class, 'destroy'])->name('admin.blog.delete')->middleware(isAdmin::class);
-Route::get('/admin/blogs/create', [AdminBlogController::class, 'create'])->middleware(isAdmin::class);
-Route::post('/admin/blogs/create', [AdminBlogController::class, 'store'])->name('blogs.store')->middleware('isAdmin');
-Route::get('/admin/blogs/{blog:slug}/edit', [AdminBlogController::class, 'edit'])->name('admin.blog.edit')->middleware(isAdmin::class);
-Route::patch('/admin/blogs/{blog:slug}/update', [AdminBlogController::class, 'update'])->name('admin.blog.update')->middleware(isAdmin::class);
+Route::middleware(isAdmin::class)->group(function () {
+  Route::get('/admin/blogs', [AdminBlogController::class, 'index'])->middleware(isAdmin::class);
+  Route::delete('/admin/blogs/{blog:slug}/delete', [AdminBlogController::class, 'destroy'])->name('admin.blog.delete');
+  Route::get('/admin/blogs/create', [AdminBlogController::class, 'create']);
+  Route::post('/admin/blogs/create', [AdminBlogController::class, 'store'])->name('blogs.store');
+  Route::get('/admin/blogs/{blog:slug}/edit', [AdminBlogController::class, 'edit'])->name('admin.blog.edit');
+  Route::patch('/admin/blogs/{blog:slug}/update', [AdminBlogController::class, 'update'])->name('admin.blog.update');
+});

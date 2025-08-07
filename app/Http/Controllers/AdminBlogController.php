@@ -37,7 +37,7 @@ class AdminBlogController extends Controller
             'title' => ['required'],
             'slug' => ['required', Rule::unique('blogs', 'slug')],
             'category_id' => ['required', Rule::exists('categories', 'id')],
-            'intro' => ['required','max:20'],
+            'intro' => ['required'],
             'body' => ['required', 'min:10']
         ], [
             'category_id.required' => 'category is required!'

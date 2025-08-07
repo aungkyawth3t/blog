@@ -1,10 +1,12 @@
 @props(['blog'])
 <div class="card">
-  <img
-  src='{{ asset("storage/$blog->thumbnail") }}'
-  class="card-img-top"
-  alt="..."
-  />
+  <div style="height: 280px; overflow: hidden;">
+    <img
+      src='{{ asset("storage/$blog->thumbnail") }}'
+      class="card-img-top"
+      alt="..."
+    />
+  </div>
   <div class="card-body">
     <h3 class="card-title"> {{ $blog->title }} </h3>
     <p class="fs-6 text-secondary">
@@ -13,10 +15,6 @@
     </p>
     <div class="tags my-3">
         <a href="?category={{ $blog->category->slug }}"><span class="badge bg-primary"> {{ $blog->category->name }} </span></a>
-        {{-- <span class="badge bg-secondary">Css</span>
-        <span class="badge bg-success">Php</span>
-        <span class="badge bg-danger">Javascript</span>
-        <span class="badge bg-warning text-dark">Frontend</span> --}}
     </div>
     <p class="card-text">
         {{ $blog->intro }}
